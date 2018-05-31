@@ -7,8 +7,6 @@ import java.math.BigDecimal;
 
 public class Mocha extends CondimentDecorator {
 
-    Beverage beverage;
-
     public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }
@@ -27,10 +25,10 @@ public class Mocha extends CondimentDecorator {
             case TALL:
                 condimentCost = BigDecimal.valueOf(.20);
                 break;
-            case VENTI:
+            case GRANDE:
                 condimentCost = BigDecimal.valueOf(.25);
                 break;
-            case GRANDE:
+            case VENTI:
                 condimentCost = BigDecimal.valueOf(.30);
                 break;
         }

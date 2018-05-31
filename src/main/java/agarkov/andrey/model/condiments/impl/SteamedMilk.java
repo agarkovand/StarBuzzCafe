@@ -7,8 +7,6 @@ import java.math.BigDecimal;
 
 public class SteamedMilk extends CondimentDecorator {
 
-    Beverage beverage;
-
     public SteamedMilk(Beverage beverage) {
         this.beverage = beverage;
     }
@@ -27,10 +25,10 @@ public class SteamedMilk extends CondimentDecorator {
             case TALL:
                 condimentCost = BigDecimal.valueOf(.10);
                 break;
-            case VENTI:
+            case GRANDE:
                 condimentCost = BigDecimal.valueOf(.13);
                 break;
-            case GRANDE:
+            case VENTI:
                 condimentCost = BigDecimal.valueOf(.15);
                 break;
         }
