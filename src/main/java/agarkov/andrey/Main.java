@@ -12,9 +12,11 @@ public class Main {
     public static void main(String[] args) {
 
         Beverage beverage1 = new Espresso();
+        beverage1.setSize(Beverage.Size.GRANDE);
         System.out.println(beverage1.getDescription() + " $" + beverage1.cost());
 
         Beverage beverage2 = new HouseBlend();
+        beverage2.setSize(Beverage.Size.VENTI);
         beverage2 = new Soy(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
